@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/layout/layout.css" />
+    <link rel="stylesheet" href="/layout/formPago.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/darkMode.js" defer></script>
+    <script src="./js/formPagos.js"></script>
+    <script src="./js/cartService.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/f97c6daded.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Medio de Pago</title>
+</head>
+<body>
+    <nav id="mi-nav">
+        <div>
+          <div class="logo">
+            <a href="index.html" class="not-active"
+              ><img src="/images/CompuTech.png" alt="Logo" class="img/logo"
+            /></a>
+            <div class="menu-nav">
+              <a href="/index.html">Inicio</a>
+              <a href="/quienes-somos.html">Quienes Somos</a>
+              <a href="#derechos">Contactanos</a>
+              <a href="/cart.html" class="not-active"
+                ><img
+                  src="/images/shopping-cart.png"
+                  alt="Carrito"
+                  class="cart"
+                />
+                <span id="cuenta-carrito">0</span></a
+              >
+              <button class="switch" id="switch"> ‎ 
+                <span><i class="fa-solid fa-sun"></i></span>
+                <span><i class="fa-solid fa-moon"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--SECCION DE PAGO-->
+      <div class="container-form">
+        <form action="#" class="form" id="form">
+            <h2>MEDIO DE PAGO</h2>
+            <div class="grupo-form">
+                <label for="tarjeta">Tipo de tarjeta</label>
+                <select  name="tarjeta" id="tipo-tarjeta">
+                    <option value="debito">Débito</option>
+                    <option value="credito"> Crédito </option>
+                </select>
+            </div>
+
+            <div class="grupo-form"> 
+                <label for="nombre">Nombre y Apellido</label> <br>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+
+            <div class="grupo-form">
+                <label for="numero">Número de tarjeta</label> <br>
+                <input type="text" name="numero" id="numero" maxlength="16" placeholder="0000 0000 0000 0000" >
+            </div>
+
+            <div class="grupo-form">
+                <label for="fecha">Fecha de expiración</label> <br>
+                <select name="mes" id="mes">
+                    <option value="">mes</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+
+                <select name="ano" id="ano"> 
+                    <option value="">año</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </div>
+
+            <div class="grupo-form">
+                <label for="cvv">CVV</label> <br>
+                <input type="text" name="cvv" id="cvv" maxlength="3" placeholder="000">
+            </div>
+
+            <div class="grupo-form">
+                <label for="email">Email</label> <br>
+                <input type="email" name="email" id="email">
+            </div>
+            <button type="button" class="buttons-form" id="btn-pagar">Pagar</button>
+            <p id="aviso"></p>
+        </form>
+      </div>
+
+      <footer id="mi-footer">
+        <div class="redes-sociales">
+          <h3>Contactanos</h3>
+          <a
+            href="https://www.instagram.com/eriik_gon25/"
+            target="_blank"
+            class="redes"
+            rel="noopener"
+            >‎ <i class="fa-brands fa-square-instagram fa-xl"></i
+          ></a>
+          <a href="https://www.facebook.com/erickmgon/" target="_blank" class="redes" rel="noopener"
+            >‎ <i class="fa-brands fa-facebook fa-xl"></i
+          ></a>
+          <a href="https://x.com/erickgon25" target="_blank" class="redes" rel=" noopener"
+            >‎ <i class="fa-brands fa-square-x-twitter fa-xl"></i
+          ></a>
+          <a href="https://www.google.com/maps/place/GerTic+Informatica/@-39.104599,-67.089185,16z/data=!4m6!3m5!1s0x95e219f401c1bc03:0xeb87f6a372d64e01!8m2!3d-39.1045994!4d-67.0891852!16s%2Fg%2F11ggs5xv43?hl=es&entry=ttu" target="_blank" rel="noopener">‎<i class="fa-solid fa-location-dot fa-xl"></i></a>
+        </div>
+        <div class="terminos">
+          <h3>Terminos y Condiciones</h3>
+          <p>
+            <ul>
+              <li>
+                <a href="/terminoCondiciones.html">Terminos y Condiciones</a> 
+              </li>
+            
+          </ul>
+          </p>
+        </div>
+        <div class="derechos" id="derechos">
+        <p>
+          © 2024. Todos los derechos reservados. Creado por
+          <a href="https://github.com/DevEriik" target="_blank" rel="noopener">DevErick</a>
+        </p>
+      </div>
+      </footer>
+    
+</body>
+</html>

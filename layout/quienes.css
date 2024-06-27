@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.conteiner {
+  overflow: auto;
+  padding: 20px;
+}
+
+.image {
+  width: 70vh;
+  height: 60vh;
+  margin-left: 3vh;
+  float: left;
+  margin-right: 20px;
+  border-radius: 15px 0px 15px 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.705);
+}
+
+.text {
+  overflow: hidden;
+}
+
+h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.compu {
+  font-size: 28px; /* Tamaño de la fuente */
+  color: transparent; /* Hace que el texto sea transparente */
+  -webkit-text-stroke-width: 1px; /* Ancho del borde */
+  -webkit-text-stroke-color: rgb(0, 0, 0); /* Color del borde */
+}
+
+.iframe{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+iframe{
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.705);
+}
+
+.titulo-iframe{
+    text-align: center;
+    margin-top: 90px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/layout/layout.css" />
+    <link rel="stylesheet" href="/layout/formularioCompra.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/darkMode.js" defer></script>
+    <script src="./js/formularioCompra.js"></script>
+    <script src="./js/ciudadesDeProv.js"></script>
+    <script src="./js/cartService.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/f97c6daded.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Formulario de compra</title>
+</head>
+<body>
+    <nav id="mi-nav">
+        <div>
+          <div class="logo">
+            <a href="index.html" class="not-active"
+              ><img src="/images/CompuTech.png" alt="Logo" class="img/logo"
+            /></a>
+            <div class="menu-nav">
+              <a href="/index.html">Inicio</a>
+              <a href="/quienes-somos.html">Quienes Somos</a>
+              <a href="#derechos">Contactanos</a>
+              <a href="/cart.html" class="not-active"
+                ><img
+                  src="/images/shopping-cart.png"
+                  alt="Carrito"
+                  class="cart"
+                />
+                <span id="cuenta-carrito">0</span></a
+              >
+              <button class="switch" id="switch"> ‎ 
+                <span><i class="fa-solid fa-sun"></i></span>
+                <span><i class="fa-solid fa-moon"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <form action="#">
+        <div class="content-form">
+            <h2>DATOS DE COMPRA</h2>
+            <div class="grid-content">
+                    <div class="datos-user" id="name-user">
+                        <label for="name">Nombre <span style="color: red;" >*</span> </label> <br>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="datos-user" id="apellido-user">
+                        <label for="apellido">Apellido <span style="color: red;" >*</span> </label> <br>
+                        <input type="text" id="apellido">
+                    </div>
+                <div class="datos-user" id="direccion-user">
+                    <label for="direccion">Direccion <span style="color: red;" >*</span> </label> <br>
+                    <input type="text" id="direccion">
+                </div>
+                <div class="datos-user" id="numero-user">
+                    <label for="numero">Numero <span style="color: red;" >*</span> </label> <br>
+                    <input type="number" id="numero">
+                </div>
+                <div class="datos-user" id="piso-user">
+                    <label for="piso">Piso</label> <br>
+                    <input type="number" id="piso">
+                </div>
+                <div class="datos-user" id="departamento-user">
+                    <label for="departamento">Departamento</label> <br>
+                    <input type="" id="departamento">
+                </div>
+                <div class="datos-user" id="codigoPostal-user">
+                    <label for="codigoPostal">Codigo Postal <span style="color: red;" >*</span> </label> <br>
+                    <input type="number" id="codigoPostal">
+                </div>
+                <div class="datos-user" id="provincia-user">
+                    <label for="provincia">Provincia <span style="color: red;" >*</span> </label> <br>
+                    <select name="provincia" id="provincia"> 
+                        <option value="">...</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Entre Ríos">Entre Ríos</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquén">Neuquén</option>
+                    <option value="Río Negro">Río Negro</option>
+                    <option value="Salta">Salta</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                    <option value="Tierra del Fuego">Tierra del Fuego</option>
+                    <option value="Tucumán">Tucumán</option>
+                    </select>
+                    <!-- <input type="text" id="provincia" required> -->
+                </div>
+                <div class="datos-user" id="localidad-user">
+                    <label for="localidad">Localidad <span style="color: red;" >*</span> </label><br>
+                    <select name="localidad" id="localidad">
+                        <option value="">...</option>
+                    </select>
+                    <!-- <input type="text" id="localidad" required> -->
+                </div>
+            
+                <h2 id="contacto">DATOS DE CONTACTO</h2>
+            
+                <div class="datos-user" id="email-user">
+                    <label for="email">Email <span style="color: red;" >*</span> </label><br>
+                    <input type="email" id="email">
+                </div>
+                <div class="datos-user" id="telefono-user">
+                    <label for="telefono">Telefono <span style="color: red;" >*</span> </label> <br>
+                    <input type="number" id="telefono">
+                </div>
+                <div class="terminos-cond" id="terminos-user">
+                    <label for="#" id="label-termi"><input type="checkbox" class="terminos" id="checkbox-terminos"> Terminos y Condiciones <span style="color: red;" >*</span> </label>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" class="buttons-form" id="btn-comprar">Continuar Compra</button>
+                <button type="button" class="buttons-form" id="cancelar-compra">Cancelar Compra</button>
+                <p id="aviso-terminos" ></p>
+            </div> 
+        </div>
+      </form>
+
+
+      <footer id="mi-footer">
+        <div class="redes-sociales">
+          <h3>Contactanos</h3>
+          <a
+            href="https://www.instagram.com/eriik_gon25/"
+            target="_blank"
+            class="redes"
+            rel="noopener"
+            >‎ <i class="fa-brands fa-square-instagram fa-xl"></i
+          ></a>
+          <a href="https://www.facebook.com/erickmgon/" target="_blank" class="redes" rel="noopener"
+            >‎ <i class="fa-brands fa-facebook fa-xl"></i
+          ></a>
+          <a href="https://x.com/erickgon25" target="_blank" class="redes" rel=" noopener"
+            >‎ <i class="fa-brands fa-square-x-twitter fa-xl"></i
+          ></a>
+          <a href="https://www.google.com/maps/place/GerTic+Informatica/@-39.104599,-67.089185,16z/data=!4m6!3m5!1s0x95e219f401c1bc03:0xeb87f6a372d64e01!8m2!3d-39.1045994!4d-67.0891852!16s%2Fg%2F11ggs5xv43?hl=es&entry=ttu" target="_blank" rel="noopener">‎<i class="fa-solid fa-location-dot fa-xl"></i></a>
+        </div>
+        <div class="terminos">
+          <h3>Terminos y Condiciones</h3>
+          <p>
+            <ul>
+              <li>
+                <a href="/terminoCondiciones.html">Terminos y Condiciones</a> 
+              </li>
+            
+          </ul>
+          </p>
+        </div>
+        <div class="derechos" id="derechos">
+        <p>
+          © 2024. Todos los derechos reservados. Creado por
+          <a href="https://github.com/DevEriik" target="_blank" rel="noopener">DevErick</a>
+        </p>
+      </div>
+      </footer>
+    
+</body>
+</html>

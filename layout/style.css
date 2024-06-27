@@ -1,0 +1,92 @@
+
+/*! Carrusel */
+
+.carrousel {
+  width: 35%;
+  max-width: 120em;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 5vh;
+  border-radius: 10px;
+}
+
+.carrousel .grande {
+  width: 400%;
+  display: flex;
+  flex-wrap: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+
+.carrousel .img {
+  width: calc(100% / 4 - 4em);
+  min-height: 10vh;
+}
+
+.carrousel .puntos {
+  width: 100%;
+  padding: 1em;
+  margin: 1em 0 0;
+  display: flex;
+  flex-wrap: row nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.carrousel .punto {
+  width: 1em;
+  height: 1em;
+  background-color: #ffffff;
+  margin: 1em;
+  border-radius: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carrousel .punto.activo {
+  background-color: #969693;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.996);
+}
+
+.button {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #878787;
+  box-shadow: 0 0 20px #ffffff50;
+  transform: scale(1.1);
+}
+
+.button:active {
+  background-color: #777777;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+/**! Descripcion del producto*/
+/**NO SE COMO HACERLO
+/* .tarjeta-producto .description {
+  display: none;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tarjeta-producto.expanded .description {
+  display: block;
+  opacity: 1;
+} */
+

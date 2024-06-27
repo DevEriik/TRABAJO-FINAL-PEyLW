@@ -1,0 +1,130 @@
+.content-form {
+  margin: 25px 350px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.705);
+  padding: 20px 0 20px 0;
+}
+
+.grid-content {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "name name apellido apellido"
+    "direccion direccion direccion direccion"
+    "numero piso departamento departamento"
+    "codigoPostal provincia localidad localidad"
+    "contacto contacto contacto contacto"
+    "email email email email"
+    "telefono telefono telefono telefono"
+    "terminos terminos terminos terminos";
+  gap: 10px;
+  padding-left: 20px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+input:not(.terminos) {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+  width: 65%;
+}
+
+input:focus, select:focus{
+    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield; 
+}
+
+.buttons {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.buttons-form {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+select {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+  width: 65%;
+}
+
+.buttons-form:hover {
+  background-color: #878787;
+  box-shadow: 0 0 20px #ffffff50;
+  transform: scale(1.1);
+}
+
+#name-user {
+  grid-area: name;
+}
+#apellido-user {
+  grid-area: apellido;
+}
+#direccion-user {
+  grid-area: direccion;
+  width: 100%;
+}
+#numero-user {
+  grid-area: numero;
+}
+#piso-user {
+  grid-area: piso;
+}
+#departamento-user {
+  grid-area: departamento;
+}
+#codigoPostal-user {
+  grid-area: codigoPostal;
+}
+#provincia-user {
+  grid-area: provincia;
+}
+#localidad-user {
+  grid-area: localidad;
+}
+#email-user {
+  grid-area: email;
+  text-align: center;
+}
+#telefono-user {
+  grid-area: telefono;
+  text-align: center;
+}
+
+#contacto {
+  grid-area: contacto;
+}
+
+#terminos-user {
+  grid-area: terminos;
+  text-align: center;
+}
